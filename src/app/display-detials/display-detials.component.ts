@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class DisplayDetialsComponent implements OnInit {
 
   toggle = true;
+  log = []; 
+
   constructor() { 
    // this.toggle = Math.random() > 0.5 ? false : true;
   }
@@ -18,6 +20,7 @@ export class DisplayDetialsComponent implements OnInit {
   getToggle(){
     console.log("toggle: " + this.toggle);
     this.toggle = !this.toggle;
+    this.log.push(this.log.length + 1);
     return this.toggle;
   }
 

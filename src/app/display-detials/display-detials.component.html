@@ -2,3 +2,5 @@
 <button type="button" class="btn btn-default" (click)="toggle = !toggle">Display Details - Alternative Solution</button>
 
 <p *ngIf="toggle">Secret Password = tuna</p>
+
+<div *ngFor="let logItem of log">{{logItem}}</div>
